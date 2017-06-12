@@ -5,8 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import kotlinx.android.synthetic.main.chart.view.*
 
-
-class ChartsAdapter() : RecyclerView.Adapter<ChartsAdapter.Holder>() {
+class ChartsAdapter : RecyclerView.Adapter<ChartsAdapter.Holder>() {
 
     var charts = emptyList<Chart>()
         set(value) {
