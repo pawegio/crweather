@@ -18,8 +18,8 @@ class ChartsAdapter() : RecyclerView.Adapter<ChartsAdapter.Holder>() {
 
     override fun onBindViewHolder(holder: Holder, position: Int) {
         val description = StringBuilder()
-        for (line in charts[position].lines)
-            description += "${line.name}\n"
+        for ((name) in charts[position].lines)
+            description += "$name\n"
         holder.itemView.description.text = description.toString()
     }
 
